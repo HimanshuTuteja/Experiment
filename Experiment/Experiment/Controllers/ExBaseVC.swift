@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ExBaseVC.swift
 //  Experiment
 //
 //  Created by Himanshu Tuteja on 22/07/19.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ExBaseVC: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-

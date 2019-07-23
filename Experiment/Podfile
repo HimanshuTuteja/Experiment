@@ -1,0 +1,17 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'Experiment' do
+pod 'SDWebImage', '~> 5.0'
+
+  target 'ExperimentTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ExperimentUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
