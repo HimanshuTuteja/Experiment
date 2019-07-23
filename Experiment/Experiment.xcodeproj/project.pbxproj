@@ -10,6 +10,10 @@
 		14525B8D16729D65BBC80FAF /* Pods_ExperimentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E90C99A3272077AFD346B86 /* Pods_ExperimentTests.framework */; };
 		3A821F9B3F6002E98797919C /* Pods_Experiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BE42F4B8D354D40327D1AF /* Pods_Experiment.framework */; };
 		6C58C6C0A2EC823E3E3D1F73 /* Pods_ExperimentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778584FB86F65D57EEFC8FB8 /* Pods_ExperimentUITests.framework */; };
+		EC8E5CB822E78A7D00871808 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB422E78A7D00871808 /* RobotoSlab-Bold.ttf */; };
+		EC8E5CB922E78A7D00871808 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB522E78A7D00871808 /* RobotoSlab-Light.ttf */; };
+		EC8E5CBA22E78A7D00871808 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB622E78A7D00871808 /* RobotoSlab-Regular.ttf */; };
+		EC8E5CBB22E78A7D00871808 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB722E78A7D00871808 /* RobotoSlab-Thin.ttf */; };
 		ECA5542922E6274600372641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5542822E6274600372641 /* AppDelegate.swift */; };
 		ECA5542B22E6274600372641 /* ExHeadlinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5542A22E6274600372641 /* ExHeadlinesVC.swift */; };
 		ECA5542E22E6274600372641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA5542C22E6274600372641 /* Main.storyboard */; };
@@ -59,6 +63,10 @@
 		5B858DBDC0A2C79542BC3327 /* Pods-ExperimentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExperimentUITests.release.xcconfig"; path = "Target Support Files/Pods-ExperimentUITests/Pods-ExperimentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		778584FB86F65D57EEFC8FB8 /* Pods_ExperimentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExperimentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88068555CAA4E40AB968BE2D /* Pods-ExperimentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExperimentTests.release.xcconfig"; path = "Target Support Files/Pods-ExperimentTests/Pods-ExperimentTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC8E5CB422E78A7D00871808 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		EC8E5CB522E78A7D00871808 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		EC8E5CB622E78A7D00871808 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		EC8E5CB722E78A7D00871808 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
 		ECA5542522E6274600372641 /* Experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Experiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA5542822E6274600372641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA5542A22E6274600372641 /* ExHeadlinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExHeadlinesVC.swift; sourceTree = "<group>"; };
@@ -142,6 +150,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC8E5CB322E78A6D00871808 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E5CB422E78A7D00871808 /* RobotoSlab-Bold.ttf */,
+				EC8E5CB522E78A7D00871808 /* RobotoSlab-Light.ttf */,
+				EC8E5CB622E78A7D00871808 /* RobotoSlab-Regular.ttf */,
+				EC8E5CB722E78A7D00871808 /* RobotoSlab-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		ECA5541C22E6274600372641 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +186,7 @@
 		ECA5542722E6274600372641 /* Experiment */ = {
 			isa = PBXGroup;
 			children = (
+				EC8E5CB322E78A6D00871808 /* Fonts */,
 				ECF171CE22E77C4D001EC1D3 /* Extensions */,
 				ECA5546322E630D300372641 /* Cells */,
 				ECA5545E22E627A000372641 /* Helpers */,
@@ -382,9 +402,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8E5CBA22E78A7D00871808 /* RobotoSlab-Regular.ttf in Resources */,
 				ECA5543622E6274700372641 /* LaunchScreen.storyboard in Resources */,
+				EC8E5CB822E78A7D00871808 /* RobotoSlab-Bold.ttf in Resources */,
+				EC8E5CB922E78A7D00871808 /* RobotoSlab-Light.ttf in Resources */,
 				ECF171D222E77CA9001EC1D3 /* ExSnackBar.xib in Resources */,
 				ECA5543322E6274700372641 /* Assets.xcassets in Resources */,
+				EC8E5CBB22E78A7D00871808 /* RobotoSlab-Thin.ttf in Resources */,
 				ECA5542E22E6274600372641 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
