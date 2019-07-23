@@ -33,6 +33,11 @@ final class ExHeadlineVM: NSObject{
         return ExHeadlineCellVM(model: models[indexPath.row])
     }
     
+    func getCellModel(for indexPath: IndexPath)-> HeadArticlesModel?{
+        guard let models = headlineDataSource?.articles, models.indices.contains(indexPath.row) else {return nil}
+        return models[indexPath.row]
+    }
+    
     func requestHeadlines(success: @escaping (Bool, Error?) -> Void){
         ExServiceHandler.shared.getHeadlines { [weak self](response, error) in
             self?.status = .loaded

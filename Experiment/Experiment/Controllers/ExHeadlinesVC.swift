@@ -50,5 +50,9 @@ extension ExHeadlinesVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (tableView.bounds.width - 16) * 0.54
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let mod = viewModel.getCellModel(for: indexPath), let detailVC = ExHeadDetailVC.instance(model: mod), viewModel.status != .none else {return}
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 

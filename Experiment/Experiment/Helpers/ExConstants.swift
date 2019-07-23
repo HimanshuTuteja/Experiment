@@ -10,3 +10,4 @@ import Foundation
 
 let kSomethingWentWrong = "Something went wrong"
 let kOops = "Oops!"
+let kStoryboard = "Main"

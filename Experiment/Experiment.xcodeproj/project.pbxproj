@@ -14,6 +14,8 @@
 		EC8E5CB922E78A7D00871808 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB522E78A7D00871808 /* RobotoSlab-Light.ttf */; };
 		EC8E5CBA22E78A7D00871808 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB622E78A7D00871808 /* RobotoSlab-Regular.ttf */; };
 		EC8E5CBB22E78A7D00871808 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB722E78A7D00871808 /* RobotoSlab-Thin.ttf */; };
+		EC8E5CBD22E7917D00871808 /* ExHeadDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E5CBC22E7917D00871808 /* ExHeadDetailVC.swift */; };
+		EC8E5CBF22E7937D00871808 /* ExHeadDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E5CBE22E7937D00871808 /* ExHeadDetailVM.swift */; };
 		ECA5542922E6274600372641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5542822E6274600372641 /* AppDelegate.swift */; };
 		ECA5542B22E6274600372641 /* ExHeadlinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5542A22E6274600372641 /* ExHeadlinesVC.swift */; };
 		ECA5542E22E6274600372641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA5542C22E6274600372641 /* Main.storyboard */; };
@@ -67,6 +69,8 @@
 		EC8E5CB522E78A7D00871808 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
 		EC8E5CB622E78A7D00871808 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
 		EC8E5CB722E78A7D00871808 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
+		EC8E5CBC22E7917D00871808 /* ExHeadDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExHeadDetailVC.swift; sourceTree = "<group>"; };
+		EC8E5CBE22E7937D00871808 /* ExHeadDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExHeadDetailVM.swift; sourceTree = "<group>"; };
 		ECA5542522E6274600372641 /* Experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Experiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA5542822E6274600372641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA5542A22E6274600372641 /* ExHeadlinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExHeadlinesVC.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 			children = (
 				ECF171C422E758E9001EC1D3 /* ExHeadlineVM.swift */,
 				ECF171C622E7649D001EC1D3 /* ExHeadlineCellVM.swift */,
+				EC8E5CBE22E7937D00871808 /* ExHeadDetailVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			children = (
 				ECA5542A22E6274600372641 /* ExHeadlinesVC.swift */,
 				ECA5545F22E6290100372641 /* ExBaseVC.swift */,
+				EC8E5CBC22E7917D00871808 /* ExHeadDetailVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -530,9 +536,11 @@
 				ECF171CD22E77BC3001EC1D3 /* ExSnackBar.swift in Sources */,
 				ECF171D022E77C61001EC1D3 /* ExString.swift in Sources */,
 				ECF171D622E77FFB001EC1D3 /* ExView.swift in Sources */,
+				EC8E5CBF22E7937D00871808 /* ExHeadDetailVM.swift in Sources */,
 				ECA5546922E6370E00372641 /* ExNetworkManager.swift in Sources */,
 				ECF171C522E758E9001EC1D3 /* ExHeadlineVM.swift in Sources */,
 				ECA5543122E6274600372641 /* Experiment.xcdatamodeld in Sources */,
+				EC8E5CBD22E7917D00871808 /* ExHeadDetailVC.swift in Sources */,
 				ECF171C322E74CF0001EC1D3 /* ExServiceHandler.swift in Sources */,
 				ECA5546722E634ED00372641 /* ExHeadModel.swift in Sources */,
 				ECA5546522E630FB00372641 /* ExHeadlinesTableCell.swift in Sources */,
