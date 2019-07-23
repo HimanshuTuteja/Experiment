@@ -8,16 +8,23 @@
 
 import Foundation
 
+enum ExHeadLoadStatus:Int{
+    case loaded = 0
+    case none
+}
+
 final class ExHeadlineVM: NSObject{
     
     private var headlineDataSource: ExHeadModel?
     private var cellViewModel: [ExHeadlineCellVM] = [ExHeadlineCellVM]()
+    var status: ExHeadLoadStatus = .none
     
     override init() {
         super.init()
     }
     
     func getHeadLineRows()->Int{
+        if status == .none {return 5}
         return headlineDataSource?.articles?.count ?? 0
     }
     
@@ -28,6 +35,7 @@ final class ExHeadlineVM: NSObject{
     
     func requestHeadlines(success: @escaping (Bool, Error?) -> Void){
         ExServiceHandler.shared.getHeadlines { [weak self](response, error) in
+            self?.status = .loaded
             guard let err = error else {
                 self?.headlineDataSource = response
                 success(true,nil)

@@ -26,6 +26,12 @@
 		ECF171C522E758E9001EC1D3 /* ExHeadlineVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171C422E758E9001EC1D3 /* ExHeadlineVM.swift */; };
 		ECF171C722E7649D001EC1D3 /* ExHeadlineCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171C622E7649D001EC1D3 /* ExHeadlineCellVM.swift */; };
 		ECF171CB22E77826001EC1D3 /* ExGradView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171CA22E77826001EC1D3 /* ExGradView.swift */; };
+		ECF171CD22E77BC3001EC1D3 /* ExSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171CC22E77BC3001EC1D3 /* ExSnackBar.swift */; };
+		ECF171D022E77C61001EC1D3 /* ExString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171CF22E77C61001EC1D3 /* ExString.swift */; };
+		ECF171D222E77CA9001EC1D3 /* ExSnackBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF171D122E77CA9001EC1D3 /* ExSnackBar.xib */; };
+		ECF171D422E77DA9001EC1D3 /* ExConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171D322E77DA9001EC1D3 /* ExConstants.swift */; };
+		ECF171D622E77FFB001EC1D3 /* ExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171D522E77FFB001EC1D3 /* ExView.swift */; };
+		ECF171D822E786FE001EC1D3 /* ExHeadShimmerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF171D722E786FE001EC1D3 /* ExHeadShimmerTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,12 @@
 		ECF171C422E758E9001EC1D3 /* ExHeadlineVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExHeadlineVM.swift; sourceTree = "<group>"; };
 		ECF171C622E7649D001EC1D3 /* ExHeadlineCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExHeadlineCellVM.swift; sourceTree = "<group>"; };
 		ECF171CA22E77826001EC1D3 /* ExGradView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExGradView.swift; sourceTree = "<group>"; };
+		ECF171CC22E77BC3001EC1D3 /* ExSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExSnackBar.swift; sourceTree = "<group>"; };
+		ECF171CF22E77C61001EC1D3 /* ExString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExString.swift; sourceTree = "<group>"; };
+		ECF171D122E77CA9001EC1D3 /* ExSnackBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExSnackBar.xib; sourceTree = "<group>"; };
+		ECF171D322E77DA9001EC1D3 /* ExConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExConstants.swift; sourceTree = "<group>"; };
+		ECF171D522E77FFB001EC1D3 /* ExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExView.swift; sourceTree = "<group>"; };
+		ECF171D722E786FE001EC1D3 /* ExHeadShimmerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExHeadShimmerTableCell.swift; sourceTree = "<group>"; };
 		EEC7AA783C2A41ED951DCA64 /* Pods-ExperimentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExperimentTests.debug.xcconfig"; path = "Target Support Files/Pods-ExperimentTests/Pods-ExperimentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBEF98E6B29C5B867CBE51D6 /* Pods-Experiment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiment.release.xcconfig"; path = "Target Support Files/Pods-Experiment/Pods-Experiment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +167,7 @@
 		ECA5542722E6274600372641 /* Experiment */ = {
 			isa = PBXGroup;
 			children = (
+				ECF171CE22E77C4D001EC1D3 /* Extensions */,
 				ECA5546322E630D300372641 /* Cells */,
 				ECA5545E22E627A000372641 /* Helpers */,
 				ECA5545D22E6279300372641 /* SupportingFiles */,
@@ -205,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				ECA5542C22E6274600372641 /* Main.storyboard */,
+				ECF171D122E77CA9001EC1D3 /* ExSnackBar.xib */,
 				ECA5543422E6274700372641 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -236,6 +250,8 @@
 				ECA5546822E6370E00372641 /* ExNetworkManager.swift */,
 				ECF171C222E74CF0001EC1D3 /* ExServiceHandler.swift */,
 				ECF171CA22E77826001EC1D3 /* ExGradView.swift */,
+				ECF171CC22E77BC3001EC1D3 /* ExSnackBar.swift */,
+				ECF171D322E77DA9001EC1D3 /* ExConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -244,8 +260,18 @@
 			isa = PBXGroup;
 			children = (
 				ECA5546422E630FB00372641 /* ExHeadlinesTableCell.swift */,
+				ECF171D722E786FE001EC1D3 /* ExHeadShimmerTableCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		ECF171CE22E77C4D001EC1D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECF171D522E77FFB001EC1D3 /* ExView.swift */,
+				ECF171CF22E77C61001EC1D3 /* ExString.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA5543622E6274700372641 /* LaunchScreen.storyboard in Resources */,
+				ECF171D222E77CA9001EC1D3 /* ExSnackBar.xib in Resources */,
 				ECA5543322E6274700372641 /* Assets.xcassets in Resources */,
 				ECA5542E22E6274600372641 /* Main.storyboard in Resources */,
 			);
@@ -471,9 +498,14 @@
 			files = (
 				ECF171CB22E77826001EC1D3 /* ExGradView.swift in Sources */,
 				ECA5542B22E6274600372641 /* ExHeadlinesVC.swift in Sources */,
+				ECF171D422E77DA9001EC1D3 /* ExConstants.swift in Sources */,
+				ECF171D822E786FE001EC1D3 /* ExHeadShimmerTableCell.swift in Sources */,
 				ECF171C722E7649D001EC1D3 /* ExHeadlineCellVM.swift in Sources */,
 				ECA5542922E6274600372641 /* AppDelegate.swift in Sources */,
 				ECA5546022E6290100372641 /* ExBaseVC.swift in Sources */,
+				ECF171CD22E77BC3001EC1D3 /* ExSnackBar.swift in Sources */,
+				ECF171D022E77C61001EC1D3 /* ExString.swift in Sources */,
+				ECF171D622E77FFB001EC1D3 /* ExView.swift in Sources */,
 				ECA5546922E6370E00372641 /* ExNetworkManager.swift in Sources */,
 				ECF171C522E758E9001EC1D3 /* ExHeadlineVM.swift in Sources */,
 				ECA5543122E6274600372641 /* Experiment.xcdatamodeld in Sources */,
