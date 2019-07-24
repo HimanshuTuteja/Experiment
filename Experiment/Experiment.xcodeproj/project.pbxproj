@@ -10,6 +10,7 @@
 		14525B8D16729D65BBC80FAF /* Pods_ExperimentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E90C99A3272077AFD346B86 /* Pods_ExperimentTests.framework */; };
 		3A821F9B3F6002E98797919C /* Pods_Experiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BE42F4B8D354D40327D1AF /* Pods_Experiment.framework */; };
 		6C58C6C0A2EC823E3E3D1F73 /* Pods_ExperimentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778584FB86F65D57EEFC8FB8 /* Pods_ExperimentUITests.framework */; };
+		EC5017D522E86A890008D7F9 /* ExDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5017D422E86A890008D7F9 /* ExDatabaseManager.swift */; };
 		EC8E5CB822E78A7D00871808 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB422E78A7D00871808 /* RobotoSlab-Bold.ttf */; };
 		EC8E5CB922E78A7D00871808 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB522E78A7D00871808 /* RobotoSlab-Light.ttf */; };
 		EC8E5CBA22E78A7D00871808 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8E5CB622E78A7D00871808 /* RobotoSlab-Regular.ttf */; };
@@ -65,6 +66,7 @@
 		5B858DBDC0A2C79542BC3327 /* Pods-ExperimentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExperimentUITests.release.xcconfig"; path = "Target Support Files/Pods-ExperimentUITests/Pods-ExperimentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		778584FB86F65D57EEFC8FB8 /* Pods_ExperimentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExperimentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88068555CAA4E40AB968BE2D /* Pods-ExperimentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExperimentTests.release.xcconfig"; path = "Target Support Files/Pods-ExperimentTests/Pods-ExperimentTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC5017D422E86A890008D7F9 /* ExDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDatabaseManager.swift; sourceTree = "<group>"; };
 		EC8E5CB422E78A7D00871808 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
 		EC8E5CB522E78A7D00871808 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
 		EC8E5CB622E78A7D00871808 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				ECF171CA22E77826001EC1D3 /* ExGradView.swift */,
 				ECF171CC22E77BC3001EC1D3 /* ExSnackBar.swift */,
 				ECF171D322E77DA9001EC1D3 /* ExConstants.swift */,
+				EC5017D422E86A890008D7F9 /* ExDatabaseManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5017D522E86A890008D7F9 /* ExDatabaseManager.swift in Sources */,
 				ECF171CB22E77826001EC1D3 /* ExGradView.swift in Sources */,
 				ECA5542B22E6274600372641 /* ExHeadlinesVC.swift in Sources */,
 				ECF171D422E77DA9001EC1D3 /* ExConstants.swift in Sources */,

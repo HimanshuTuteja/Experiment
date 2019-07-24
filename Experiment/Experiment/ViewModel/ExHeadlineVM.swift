@@ -38,15 +38,32 @@ final class ExHeadlineVM: NSObject{
         return models[indexPath.row]
     }
     
+    private func settleOfflineData(){
+        ExDatabaseManager.sharedInstance().clearDB()
+        guard let models = headlineDataSource?.articles else {return}
+        for mod in models{
+            ExDatabaseManager.sharedInstance().logModel(mod)
+        }
+    }
+    
     func requestHeadlines(success: @escaping (Bool, Error?) -> Void){
         ExServiceHandler.shared.getHeadlines { [weak self](response, error) in
             self?.status = .loaded
             guard let err = error else {
                 self?.headlineDataSource = response
+                self?.settleOfflineData()
                 success(true,nil)
                 return
             }
-            success(false,err)
+            guard let offlineData = ExDatabaseManager.sharedInstance().getModel(), offlineData.count > 0 else {
+                success(false,err)
+                return
+            }
+            
+            self?.headlineDataSource = ExHeadModel(articles: offlineData, totalResults: offlineData.count, status: kStatusOk)
+            success(true,nil)
+            return
+            
         }
     }
 }

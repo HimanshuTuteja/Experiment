@@ -11,3 +11,6 @@ import Foundation
 let kSomethingWentWrong = "Something went wrong"
 let kOops = "Oops!"
 let kStoryboard = "Main"
+let kCoreDataEntity = "HeadArticles"
+let kStatusOk = "ok"
+let kTryAgain = "\nTry Pull to Refresh to get headline again."

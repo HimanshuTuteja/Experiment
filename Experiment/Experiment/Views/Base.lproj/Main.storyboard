@@ -243,7 +243,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P80-5W-U7w">
-                                <rect key="frame" x="24" y="824" width="0.0" height="0.0"/>
+                                <rect key="frame" x="24" y="824" width="110" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="SZt-vb-Ycy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="20"/>
                                 <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -282,12 +285,13 @@
                             <constraint firstItem="cbE-SO-TBN" firstAttribute="trailing" secondItem="w3O-DU-NZm" secondAttribute="trailing" constant="24" id="PLL-Q4-2uz"/>
                             <constraint firstItem="w3O-DU-NZm" firstAttribute="centerY" secondItem="P80-5W-U7w" secondAttribute="centerY" id="Uio-Bd-oyf"/>
                             <constraint firstAttribute="bottom" secondItem="1xs-4v-wy1" secondAttribute="bottom" id="Ulq-NI-HvN"/>
+                            <constraint firstItem="TkB-9i-tar" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qdd-9b-cSz" secondAttribute="bottom" constant="10" id="VMw-nV-uOe"/>
                             <constraint firstItem="dTh-2X-u5X" firstAttribute="leading" secondItem="cbE-SO-TBN" secondAttribute="leading" constant="24" id="bed-ms-KU2"/>
                             <constraint firstItem="Xx1-S3-4O7" firstAttribute="leading" secondItem="cbE-SO-TBN" secondAttribute="leading" id="ehF-p8-QU7"/>
                             <constraint firstItem="cbE-SO-TBN" firstAttribute="trailing" secondItem="Xx1-S3-4O7" secondAttribute="trailing" id="fGk-77-ONs"/>
                             <constraint firstItem="1xs-4v-wy1" firstAttribute="leading" secondItem="cbE-SO-TBN" secondAttribute="leading" id="jmu-cE-LH7"/>
                             <constraint firstItem="qdd-9b-cSz" firstAttribute="top" secondItem="cbE-SO-TBN" secondAttribute="top" constant="29" id="rhO-Yb-mf9"/>
-                            <constraint firstItem="w3O-DU-NZm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P80-5W-U7w" secondAttribute="trailing" constant="10" id="tfH-eb-E80"/>
+                            <constraint firstItem="w3O-DU-NZm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P80-5W-U7w" secondAttribute="trailing" constant="5" id="tfH-eb-E80"/>
                             <constraint firstAttribute="bottom" secondItem="dTh-2X-u5X" secondAttribute="bottom" constant="60" id="xEE-fk-4PO"/>
                             <constraint firstItem="cbE-SO-TBN" firstAttribute="trailing" secondItem="dTh-2X-u5X" secondAttribute="trailing" constant="24" id="zg6-U6-oxT"/>
                         </constraints>

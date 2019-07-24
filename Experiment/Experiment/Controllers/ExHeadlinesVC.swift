@@ -12,19 +12,30 @@ final class ExHeadlinesVC: ExBaseVC {
 
     @IBOutlet private weak var tableView: UITableView!
     var viewModel: ExHeadlineVM = ExHeadlineVM()
+    let refreshControl: UIRefreshControl = UIRefreshControl()
     
-    private func populateHeadlines(){
+    @objc private func populateHeadlines(){
         viewModel.requestHeadlines { [weak self](success, error) in
+            self?.refreshControl.endRefreshing()
             if success{
                 self?.tableView.reloadData()
             }else{
-                ExSnackBar.showSnackBar(for: error?.localizedDescription ?? kSomethingWentWrong, for: kOops, visibility: .high)
+                self?.tableView.reloadData()
+                ExSnackBar.showSnackBar(for: (error?.localizedDescription ?? kSomethingWentWrong) + kTryAgain, for: kOops, visibility: .high)
             }
         }
     }
     
+    private func configureRefreshControl(){
+        refreshControl.tintColor = UIColor.white
+        refreshControl.addTarget(self, action: #selector(populateHeadlines), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureRefreshControl()
         populateHeadlines()
     }
 }
